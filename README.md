@@ -1,14 +1,6 @@
 # About Eleventy Plugin SEO
 
-An [Eleventy](https://github.com/11ty/eleventy) plugin to generate meta tags for improved SEO using the Liquid or Nujucks templating engines.
-
-[![GitHub Actions](https://github.com/artstorm/eleventy-plugin-seo/workflows/CI/badge.svg)](https://github.com/artstorm/eleventy-plugin-seo/actions)
-[![GitHub Actions](https://github.com/artstorm/eleventy-plugin-seo/workflows/style/badge.svg)](https://github.com/artstorm/eleventy-plugin-seo/actions)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/1ed1dcde669edcc8240a/test_coverage)](https://codeclimate.com/github/artstorm/eleventy-plugin-seo/test_coverage)
-[![Maintainability](https://api.codeclimate.com/v1/badges/1ed1dcde669edcc8240a/maintainability)](https://codeclimate.com/github/artstorm/eleventy-plugin-seo/maintainability)
-
-_I wrote this plugin when moving from Jekyll to Eleventy to get the functionality I previously had with Jekyll SEO Tag._
+A fork of [Johan Steen](https://github.com/artstorm)&rsquo;s [Eleventy](https://github.com/11ty/eleventy) plugin to generate meta tags for improved SEO using the Liquid or Nujucks templating engines.
 
 ## Features
 
@@ -23,10 +15,20 @@ _I wrote this plugin when moving from Jekyll to Eleventy to get the functionalit
 
 ## Installation
 
-Available on [npm](https://www.npmjs.com/package/eleventy-plugin-seo):
+Edit your Eleventy project's `package.json` dependencies to point to this repository:
+
+```js
+"dependencies" : {
+    "some-package": "^16.8.6",
+    "eleventy-plugin-seo": "https://github.com/seezee/eleventy-plugin-seo/",
+    "some-other-package": "^4.3.1",
+    ...
+}
+```
+Reinstall the packages:
 
 ```sh
-npm install eleventy-plugin-seo --save
+user@bash:~$ npm i
 ```
 
 Add the plugin to `.eleventy.js`:
